@@ -167,19 +167,16 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
-    border: 1px solid black;
 }
+
+
+/* nav bar  */
 
 #navigation {
     margin: 5vh 0;
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-header {
-    margin: 2vh 0;
-    width: 100%;
 }
 
 .logo {
@@ -193,25 +190,31 @@ header {
 nav {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     color: black;
     width: 80%;
-    height: 10vh;
+    height: 8vh;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-decoration: none;
+    color: black;
 }
 
 
-/* .navigation-bar nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30px;
-    background-color: #eb3a45;
-    width: 80%;
-    margin-top: -70px;
-    margin-left: 70px;
-    text-align: center;
-} */
+/* header */
+
+header {
+    margin: 2vh 0;
+    width: 100%;
+}
+
+
+/* top content */
 
 .top-content {
     display: flex;
@@ -219,7 +222,6 @@ nav {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    /*change back to border-bottom*/
 }
 
 .top-content-about {
@@ -228,7 +230,6 @@ nav {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    /*change back to border-bottom*/
 }
 
 .top-content .text-container {
@@ -241,13 +242,66 @@ nav {
     width: 100%;
     padding: 0 1%;
     padding-bottom: 20px;
-    border: 1px solid red;
 }
+
+
+/* middle content */
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+
+
+/* about middle gallery */
+
+.middle-content-about {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.top-boxes,
+.bottom-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+.box-about {
+    height: 50%;
+    width: 43%;
+    border-bottom: 1px dashed black;
+    padding: 2%;
+}
+
+.box-about img {
+    width: 100%;
+}
+
+.box-about h2 {
+    padding-top: 2vh;
+}
+
+.box-about p {
+    padding-bottom: 2vh;
+}
+
+.box-about button {
+    font-size: 1vw;
+    width: 7vw;
+    height: 5vh;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+
+/* middle content home */
 
 .middle-content h2 {
     padding: 0 2%;
@@ -263,7 +317,6 @@ nav {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -311,10 +364,15 @@ nav {
     background: dodgerblue;
 }
 
-.bottom-content {
+
+/* bottom content */
+
+.bottom-content,
+.bottom-content-about {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 4% 20px;
     justify-content: space-around;
+    padding-top: 2vh;
 }
 
 .bottom-content .text-container {
@@ -324,6 +382,9 @@ nav {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+
+/* footer */
 
 footer {
     width: 100%;
