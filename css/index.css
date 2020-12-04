@@ -3,60 +3,158 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+
+/* end rest */
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -69,7 +167,52 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    border: 1px solid black;
 }
+
+#navigation {
+    margin: 5vh 0;
+    /* height: 20vh; */
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    /* width: 15vw; */
+    /* height: 10vh; */
+    border: 1px solid red;
+}
+
+.logo img {
+    width: 15vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border: 1px solid green;
+    width: 80%;
+    height: 10vh;
+}
+
+
+/* .navigation-bar nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    background-color: #eb3a45;
+    width: 80%;
+    margin-top: -70px;
+    margin-left: 70px;
+    text-align: center;
+} */
 
 .top-content {
     display: flex;
@@ -82,7 +225,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -104,12 +247,52 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box:nth-child(1) {
+    background: teal;
+}
+
+.box:nth-child(2) {
+    background: gold;
+}
+
+.box:nth-child(3) {
+    background: cadetblue;
+}
+
+.box:nth-child(4) {
+    background: coral;
+}
+
+.box:nth-child(5) {
+    background: crimson;
+}
+
+.box:nth-child(6) {
+    background: forestgreen;
+}
+
+.box:nth-child(7) {
+    background: darkorchid;
+}
+
+.box:nth-child(8) {
+    background: hotpink;
+}
+
+.box:nth-child(9) {
+    background: indigo;
+}
+
+.box:nth-child(10) {
+    background: dodgerblue;
 }
 
 .bottom-content {

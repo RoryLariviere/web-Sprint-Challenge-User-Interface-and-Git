@@ -33,22 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+[Semantic HTML is the use of markup that defines what it is and whats inside of it to make it more intuitive and easy to understand.]
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
-
+[block takes up its own line like a <p> element, whereas inline displays on the same line like <span>. block can have its height and width changed while inline cant]
 3. What are the 4 areas of the box model?
-
+[content padding border margin]
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
-
+[cross axis]
 5. Explain why git is valuable to a team of developers.
-
+[it allows a team to work together on the same project without interfering with each other. also allows regular back up with comments and documentation, and the ability to work on a project and make changes to a clone so as not to affect the main project until ready to merge.]
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x ] Create a forked copy of this project.
+- [ x ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [ x ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push -u origin `<firstName-lastName>`.
  
